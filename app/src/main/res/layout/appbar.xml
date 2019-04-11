@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+    <com.google.android.material.appbar.AppBarLayout
+	    android:id="@+id/appbar"
+	    style="@style/Widget.AppBar"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+
+        <FrameLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingHorizontal="@dimen/margin_normal"
+	        app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">
+
+
+            <TextView
+	            android:id="@+id/title"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:gravity="center"
+	            android:minHeight="?actionBarSize"
+	            android:text="GAC Hades"
+	            android:textAppearance="@style/TextAppearance.IOSched.ToolbarTitle" />
+
+        </FrameLayout>
+
+	    <com.google.android.material.tabs.TabLayout
+		    android:id="@+id/tabs"
+		    android:layout_width="match_parent"
+		    android:layout_height="?actionBarSize" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+</LinearLayout>
